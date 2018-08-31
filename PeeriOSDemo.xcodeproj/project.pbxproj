@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		045FD33C2138CD5A0033E000 /* PCDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 045FD3302138CD590033E000 /* PCDelegate.mm */; };
+		045FD33D2138CD5A0033E000 /* PeerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045FD3322138CD590033E000 /* PeerController.m */; };
+		045FD33E2138CD5A0033E000 /* RTCPeerConnectionProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 045FD3342138CD5A0033E000 /* RTCPeerConnectionProxy.m */; };
+		045FD33F2138CD5A0033E000 /* PCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 045FD3362138CD5A0033E000 /* PCConnection.m */; };
+		045FD3402138CD5A0033E000 /* BandwidthLimiter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 045FD3392138CD5A0033E000 /* BandwidthLimiter.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		045FD3412138CD5A0033E000 /* PackData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 045FD33A2138CD5A0033E000 /* PackData.mm */; };
+		047BEBB921381A0100272700 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BEBB821381A0100272700 /* AppDelegate.m */; };
+		047BEBBC21381A0100272700 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BEBBB21381A0100272700 /* ViewController.m */; };
+		047BEBBF21381A0100272700 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047BEBBD21381A0100272700 /* Main.storyboard */; };
+		047BEBC121381A0400272700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047BEBC021381A0400272700 /* Assets.xcassets */; };
+		047BEBC421381A0400272700 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047BEBC221381A0400272700 /* LaunchScreen.storyboard */; };
+		047BEBC721381A0400272700 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 047BEBC621381A0400272700 /* main.m */; };
+		43D17DDF2B3F14F15B27E1A3 /* libPods-PeeriOSDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF76C95616A6E8D15694872 /* libPods-PeeriOSDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		045FD3252138CD4C0033E000 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		045FD3272138CD4C0033E000 /* libpeerjs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpeerjs.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		045FD3302138CD590033E000 /* PCDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PCDelegate.mm; sourceTree = "<group>"; };
+		045FD3312138CD590033E000 /* PeerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeerController.h; sourceTree = "<group>"; };
+		045FD3322138CD590033E000 /* PeerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeerController.m; sourceTree = "<group>"; };
+		045FD3332138CD5A0033E000 /* RTCPeerConnectionProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTCPeerConnectionProxy.h; sourceTree = "<group>"; };
+		045FD3342138CD5A0033E000 /* RTCPeerConnectionProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTCPeerConnectionProxy.m; sourceTree = "<group>"; };
+		045FD3352138CD5A0033E000 /* PackData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackData.h; sourceTree = "<group>"; };
+		045FD3362138CD5A0033E000 /* PCConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCConnection.m; sourceTree = "<group>"; };
+		045FD3372138CD5A0033E000 /* PCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCConnection.h; sourceTree = "<group>"; };
+		045FD3382138CD5A0033E000 /* BandwidthLimiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BandwidthLimiter.h; sourceTree = "<group>"; };
+		045FD3392138CD5A0033E000 /* BandwidthLimiter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BandwidthLimiter.mm; sourceTree = "<group>"; };
+		045FD33A2138CD5A0033E000 /* PackData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PackData.mm; sourceTree = "<group>"; };
+		045FD33B2138CD5A0033E000 /* PCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCDelegate.h; sourceTree = "<group>"; };
+		045FD3582138D03D0033E000 /* libSocketRocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSocketRocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		047BEBB421381A0100272700 /* PeeriOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeeriOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		047BEBB721381A0100272700 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		047BEBB821381A0100272700 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		047BEBBA21381A0100272700 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		047BEBBB21381A0100272700 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		047BEBBE21381A0100272700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		047BEBC021381A0400272700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		047BEBC321381A0400272700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		047BEBC521381A0400272700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047BEBC621381A0400272700 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5BE83F1D91316D49D4C4D44C /* Pods-PeeriOSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeeriOSDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PeeriOSDemo/Pods-PeeriOSDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6AF76C95616A6E8D15694872 /* libPods-PeeriOSDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PeeriOSDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ABEB03070D078A0936BEDB0 /* Pods-PeeriOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeeriOSDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PeeriOSDemo/Pods-PeeriOSDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		045FD3242138CD4C0033E000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047BEBB121381A0100272700 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D17DDF2B3F14F15B27E1A3 /* libPods-PeeriOSDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		045FD3282138CD4D0033E000 /* peerjs */ = {
+			isa = PBXGroup;
+			children = (
+				045FD3382138CD5A0033E000 /* BandwidthLimiter.h */,
+				045FD3392138CD5A0033E000 /* BandwidthLimiter.mm */,
+				045FD3352138CD5A0033E000 /* PackData.h */,
+				045FD33A2138CD5A0033E000 /* PackData.mm */,
+				045FD3372138CD5A0033E000 /* PCConnection.h */,
+				045FD3362138CD5A0033E000 /* PCConnection.m */,
+				045FD33B2138CD5A0033E000 /* PCDelegate.h */,
+				045FD3302138CD590033E000 /* PCDelegate.mm */,
+				045FD3312138CD590033E000 /* PeerController.h */,
+				045FD3322138CD590033E000 /* PeerController.m */,
+				045FD3332138CD5A0033E000 /* RTCPeerConnectionProxy.h */,
+				045FD3342138CD5A0033E000 /* RTCPeerConnectionProxy.m */,
+			);
+			path = peerjs;
+			sourceTree = "<group>";
+		};
+		047BEBAB21381A0100272700 = {
+			isa = PBXGroup;
+			children = (
+				047BEBB621381A0100272700 /* PeeriOSDemo */,
+				045FD3282138CD4D0033E000 /* peerjs */,
+				047BEBB521381A0100272700 /* Products */,
+				9517D77EBA953972E0B58028 /* Pods */,
+				EB616214D41608819FF59F66 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		047BEBB521381A0100272700 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				047BEBB421381A0100272700 /* PeeriOSDemo.app */,
+				045FD3272138CD4C0033E000 /* libpeerjs.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		047BEBB621381A0100272700 /* PeeriOSDemo */ = {
+			isa = PBXGroup;
+			children = (
+				047BEBB721381A0100272700 /* AppDelegate.h */,
+				047BEBB821381A0100272700 /* AppDelegate.m */,
+				047BEBBA21381A0100272700 /* ViewController.h */,
+				047BEBBB21381A0100272700 /* ViewController.m */,
+				047BEBBD21381A0100272700 /* Main.storyboard */,
+				047BEBC021381A0400272700 /* Assets.xcassets */,
+				047BEBC221381A0400272700 /* LaunchScreen.storyboard */,
+				047BEBC521381A0400272700 /* Info.plist */,
+				047BEBC621381A0400272700 /* main.m */,
+			);
+			path = PeeriOSDemo;
+			sourceTree = "<group>";
+		};
+		9517D77EBA953972E0B58028 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BE83F1D91316D49D4C4D44C /* Pods-PeeriOSDemo.debug.xcconfig */,
+				9ABEB03070D078A0936BEDB0 /* Pods-PeeriOSDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB616214D41608819FF59F66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				045FD3582138D03D0033E000 /* libSocketRocket.a */,
+				6AF76C95616A6E8D15694872 /* libPods-PeeriOSDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		045FD3262138CD4C0033E000 /* peerjs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045FD32F2138CD4D0033E000 /* Build configuration list for PBXNativeTarget "peerjs" */;
+			buildPhases = (
+				045FD3232138CD4C0033E000 /* Sources */,
+				045FD3242138CD4C0033E000 /* Frameworks */,
+				045FD3252138CD4C0033E000 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = peerjs;
+			productName = peerjs;
+			productReference = 045FD3272138CD4C0033E000 /* libpeerjs.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		047BEBB321381A0100272700 /* PeeriOSDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047BEBCA21381A0400272700 /* Build configuration list for PBXNativeTarget "PeeriOSDemo" */;
+			buildPhases = (
+				23882D9B64C0D27E4D4F8AE7 /* [CP] Check Pods Manifest.lock */,
+				047BEBB021381A0100272700 /* Sources */,
+				047BEBB121381A0100272700 /* Frameworks */,
+				047BEBB221381A0100272700 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeeriOSDemo;
+			productName = PeeriOSDemo;
+			productReference = 047BEBB421381A0100272700 /* PeeriOSDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		047BEBAC21381A0100272700 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = gen;
+				TargetAttributes = {
+					045FD3262138CD4C0033E000 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					047BEBB321381A0100272700 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 047BEBAF21381A0100272700 /* Build configuration list for PBXProject "PeeriOSDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 047BEBAB21381A0100272700;
+			productRefGroup = 047BEBB521381A0100272700 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				047BEBB321381A0100272700 /* PeeriOSDemo */,
+				045FD3262138CD4C0033E000 /* peerjs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		047BEBB221381A0100272700 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047BEBC421381A0400272700 /* LaunchScreen.storyboard in Resources */,
+				047BEBC121381A0400272700 /* Assets.xcassets in Resources */,
+				047BEBBF21381A0100272700 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23882D9B64C0D27E4D4F8AE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PeeriOSDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		045FD3232138CD4C0033E000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045FD3402138CD5A0033E000 /* BandwidthLimiter.mm in Sources */,
+				045FD33D2138CD5A0033E000 /* PeerController.m in Sources */,
+				045FD3412138CD5A0033E000 /* PackData.mm in Sources */,
+				045FD33F2138CD5A0033E000 /* PCConnection.m in Sources */,
+				045FD33E2138CD5A0033E000 /* RTCPeerConnectionProxy.m in Sources */,
+				045FD33C2138CD5A0033E000 /* PCDelegate.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047BEBB021381A0100272700 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047BEBBC21381A0100272700 /* ViewController.m in Sources */,
+				047BEBC721381A0400272700 /* main.m in Sources */,
+				047BEBB921381A0100272700 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		047BEBBD21381A0100272700 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				047BEBBE21381A0100272700 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		047BEBC221381A0400272700 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				047BEBC321381A0400272700 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		045FD32D2138CD4D0033E000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q2JNSZV5H;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Pods/Headers/Public\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		045FD32E2138CD4D0033E000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q2JNSZV5H;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Pods/Headers/Public\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		047BEBC821381A0400272700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		047BEBC921381A0400272700 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		047BEBCB21381A0400272700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE83F1D91316D49D4C4D44C /* Pods-PeeriOSDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q2JNSZV5H;
+				INFOPLIST_FILE = PeeriOSDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gen.PeeriOSDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		047BEBCC21381A0400272700 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ABEB03070D078A0936BEDB0 /* Pods-PeeriOSDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q2JNSZV5H;
+				INFOPLIST_FILE = PeeriOSDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gen.PeeriOSDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		045FD32F2138CD4D0033E000 /* Build configuration list for PBXNativeTarget "peerjs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045FD32D2138CD4D0033E000 /* Debug */,
+				045FD32E2138CD4D0033E000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047BEBAF21381A0100272700 /* Build configuration list for PBXProject "PeeriOSDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047BEBC821381A0400272700 /* Debug */,
+				047BEBC921381A0400272700 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047BEBCA21381A0400272700 /* Build configuration list for PBXNativeTarget "PeeriOSDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047BEBCB21381A0400272700 /* Debug */,
+				047BEBCC21381A0400272700 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 047BEBAC21381A0100272700 /* Project object */;
+}
